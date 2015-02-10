@@ -1,0 +1,23 @@
+@import "../../compass-mixins/lib/compass/css3/background-size";
+
+@mixin createDefaultElement( $pImagePath )
+{
+    background-image:url( $pImagePath );
+    height:image-height( $pImagePath );
+    width: image-width( $pImagePath );
+    @include background-size(contain);
+    background-repeat: no-repeat;
+}
+
+@mixin createSprite( $xPos, $yPos ){
+    display:block;
+    position:absolute;
+    top:$yPos;
+    left:$xPos;
+}
+
+@mixin useSprite( $name ) {
+    @include images-sprite($name);
+    height: images-sprite-height($name);
+    width: images-sprite-width($name);
+}

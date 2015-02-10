@@ -1,0 +1,28 @@
+{
+  "name": "mrynk-sass-mixins",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mrynk/mrynk-sass-mixins",
+  "authors": [
+    "Remco van den Brink <remco@mrynk.nl>"
+  ],
+  "description": "A small set of mixins that are (currently) used for creating HTML5 banners",
+  "main": "lib/mrynk/sprites.scss",
+  "keywords": [
+    "sass",
+    "compass",
+    "mrynk",
+    "sprites",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-mixins": "~1.0.2"
+  }
+}
